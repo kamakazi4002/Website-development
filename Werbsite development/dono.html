@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Donation page</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>Home</td>
+                <td>Fundraisers</td>
+                <td>Halls</td>
+                <td>contact us</td>
+                <td>About us</td>
+                <td>FAQ's'</td>
+            </tr>
+        </table>
+    </div>
+    <h1>Donate here</h1>
+    <link href="styles/StyleSheet2.css"
+          rel="stylesheet" />
+    <form>
+        <div>
+            <fieldset>
+                <legend>Your details</legend>
+                <label for="name">Enter your name*</label>
+                <input type="text" id="name" name="name" required />
+                <label for="DOB">Enter your date of birth*</label>
+                <input type="date" min="01-01-1900" max="11-25-2024" required /><br />
+                <label for="email">Enter your email*</label>
+                <input type="email" id="email" name="email" required />
+                <label for="tel">Phone number*</label>
+                <input type="tel" id="phone number" name="phone number" required /><br />
+                <label for="donation">Which campaign would you like to donate to</label>
+                    <select id="campaign" name="donation selection">
+                        <option value="child poverty">child poverty</option>
+                        <option value="Homeless support">homeless support </option>
+                        <option value="Aid to diaster impacted nations">Aid to nations impacted by natural disasters</option>
+                        <option value="food banks">Food banks</option>
+                        <option value="disability support">Support for those living with disabilites</option>
+                        <option value="mental health support">Mental health support</option>
+                    </select><br />
+                <label for="donation quantity">how much would you like to donate</label>
+                    <select id="donation" name="donation quantity">
+                        <option value="£5">£5</option>
+                        <option value="£10">£10</option>
+                        <option value="£20">£20</option>
+                        <option value="£40">£40</option>
+                    </select>
+                <label for="custom donation">custom donation amount</label>
+                <textarea name="custom donation" rows="1" columns="5"></textarea>
+      
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Card details</legend>
+                <label for="cardnumber">Enter your card Number</label>
+                <input type="text" id="card-number" name="card number" /><br />
+                <label for="expiry date">Enter the expiry date</label>
+                <input type="month" id="expiry" name="expiry" /><br />
+                <label for="CCV">Enter the CCV security code</label>
+                <Input type="text" id="CCV" name="CCV" />
+            </fieldset>
+        </div>
+        <div>
+            <input type="submit" id="submit" name="Submit donation" />
+        </div>
+    </form>
+    <p>*=required</p>
+</body>
+</html>
