@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Donation page</title>
+</head>
+<body>
+    <link href="hallstyle.css" rel="stylesheet" />
+    <header>
+        <h1>Heart Me Charity Fundraiser</h1>
+        <p>Supporting causes that change lives</p>
+    </header>
+
+    <div class="container">
+        <div class="cause">
+            <img src="https://via.placeholder.com/400x250" alt="Education for All">
+            <div class="cause-details">
+                <h2>Education for All</h2>
+                <p>We believe in the power of education to transform lives. Your contributions help build schools, provide learning materials, and train teachers in underserved communities.</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="https://via.placeholder.com/400x250" alt="Feeding the Hungry">
+            <div class="cause-details">
+                <h2>Feeding the Hungry</h2>
+                <p>Millions go to bed hungry every day. Help us deliver nutritious meals to children, families, and the elderly in need across the globe.</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="https://via.placeholder.com/400x250" alt="Healthcare for All">
+            <div class="cause-details">
+                <h2>Healthcare for All</h2>
+                <p>Your donations provide essential medical supplies, fund health clinics, and support vaccinations to save lives in disadvantaged regions.</p>
+            </div>
+        </div>
+
+        <div class="cause">
+            <img src="https://via.placeholder.com/400x250" alt="Disaster Relief">
+            <div class="cause-details">
+                <h2>Disaster Relief</h2>
+                <p>When disaster strikes, immediate action is critical. Join us in providing emergency aid, shelter, and support to those affected by natural disasters.</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>Donate here</h1>
+    <form>
+        <div>
+            <fieldset>
+                <legend>Your details</legend>
+                <label for="name">Enter your name*</label>
+                <input type="text" id="name" name="name" required />
+                <label for="DOB">Enter your date of birth*</label>
+                <input type="date" min="01-01-1900" max="11-25-2024" required /><br />
+                <label for="email">Enter your email*</label>
+                <input type="email" id="email" name="email" required />
+                <label for="tel">Phone number*</label>
+                <input type="tel" id="phone number" name="phone number" required /><br />
+                <label for="donation">Which campaign would you like to donate to</label>
+                <select id="campaign" name="donation selection">
+                    <option value="child poverty">child poverty</option>
+                    <option value="Homeless support">homeless support </option>
+                    <option value="Aid to diaster impacted nations">Aid to nations impacted by natural disasters</option>
+                    <option value="food banks">Food banks</option>
+                    <option value="disability support">Support for those living with disabilites</option>
+                    <option value="mental health support">Mental health support</option>
+                </select><br />
+                <label for="donation quantity">how much would you like to donate</label>
+                <select id="donation" name="donation quantity">
+                    <option value="£5">£5</option>
+                    <option value="£10">£10</option>
+                    <option value="£20">£20</option>
+                    <option value="£40">£40</option>
+                </select>
+                <label for="custom donation">custom donation amount</label>
+                <textarea name="custom donation" rows="1" columns="5"></textarea>
+
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>Card details</legend>
+                <label for="cardnumber">Enter your card Number</label>
+                <input type="text" id="card-number" name="card number" /><br />
+                <label for="expiry date">Enter the expiry date</label>
+                <input type="month" id="expiry" name="expiry" /><br />
+                <label for="CCV">Enter the CCV security code</label>
+                <Input type="text" id="CCV" name="CCV" />
+            </fieldset>
+        </div>
+        <div>
+            <input type="submit" id="submit" name="Submit donation" />
+        </div>
+    </form>
+    <p>*=required</p>
+    <footer>
+        <p>© 2024 Heart Me Charity. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+</body>
+</html>

@@ -67,16 +67,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aboutus.html" />
+    <Content Include="carousel.js" />
+    <Content Include="carouselcss.css" />
     <Content Include="halls.html" />
     <Content Include="carousel.html" />
-    <Content Include="dono.html" />
+    <Content Include="funds.html" />
     <Content Include="FAQ.html" />
     <Content Include="dropdown.js" />
     <Content Include="admin.html" />
     <Content Include="contactus.html" />
-    <Content Include="StyleSheet1.css" />
+    <Content Include="Home.html" />
+    <Content Include="home.js" />
+    <Content Include="notadmin.html" />
+    <Content Include="passcheck.js" />
+    <Content Include="hallstyle.css" />
     <Content Include="StyleSheet2.css" />
-    <Content Include="StyleSheet3.css" />
+    <Content Include="FAQstyle.css" />
+    <Content Include="homestyle.css" />
+    <Content Include="sysadmin.html" />
+    <Content Include="temp.html" />
+    <Content Include="test.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

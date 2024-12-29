@@ -1,0 +1,38 @@
+﻿button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+label, input {
+    padding: 10px;
+}
+
+#submit {
+    background-color: palevioletred;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+    #submit:hover {
+        background-image: linear-gradient(palevioletred, mediumvioletred);
+    }
+
+label {
+    display: inline-block;
+    text-align: right
+}
+
+
+table {
+    border: 1px solid;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+td {
+    padding: 15px;
+}
+
+h1 {
+    font-size: xx-large;
+}

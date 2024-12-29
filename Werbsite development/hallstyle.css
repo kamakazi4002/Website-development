@@ -1,0 +1,90 @@
+﻿button, input, select, textarea{
+    font-family: inherit;
+    font-size: 100%;
+}
+
+label, input {
+    padding: 10px;
+}
+
+#submit {
+    background-color: palevioletred;
+    border-radius: 20px;
+    padding: 15px;
+ }
+#submit:hover{
+    background-image: linear-gradient(palevioletred, mediumvioletred);
+}
+
+label {
+    display: inline-block;
+    text-align: right
+}
+
+input{
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: palevioletred;
+}
+
+    .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 20px 22px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: mediumvioletred;
+            color: white;
+        }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #ff6363;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.hall {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .hall h2 {
+        margin: 0 0 10px;
+        color: #ff6363;
+    }
+
+    .hall p {
+        margin: 0;
+    }

@@ -5,18 +5,62 @@
     <title></title>
 </head>
 <body>
+    <link rel="stylesheet" href="carouselcss.css" />
     <!--carousel container-->
     <div class="carousel-container">
 
         <!--Full width images with number and caption-->
-        <div class="carousel-fade">
+    <div class="carousel-fade">
         <div class="imagenumber">1/6 </div>
         <img src="images/childpoverty.jpg" style="width:100%" />
         <div class="text">Child poverty</div>
     </div>
 
     <div class="carousel-fade">
-        <div class
+        <div class="imagenumber">2/6</div>
+        <img src="images/homeless.jpg" style="width:100%" />
+        <div class="text">Homelessness</div>
     </div>
+
+    <div>
+       <div class="imagenumber">3/6</div>
+        <img src="images/natural-disaster-support.jpg" style="width:100%" />
+        <div class="text">Natural disaster Aid</div>
+    </div>
+
+    <div>
+        <div class="imagenumber">4/6</div>
+        <img src="images/foodbank.png" style="width:100%" />
+        <div class="text">Food banks</div>
+    </div>
+
+    <div>
+        <div class="imagenumber">5/6</div>
+        <img src="images/disability-support.jpg" style="100%" />
+        <div class="text">Disability support</div>
+    </div>
+
+    <div>
+        <div class="imagenumber">6/6</div>
+        <img src="images/ptsd.jpg" style="100%" />
+        <div class="text">PTSD for traumatic incidents</div>
+    </div>
+</div>
+    
+    <!--These create the buttons to move back and forwards through the carousel-->
+    <div>
+        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentslide(1)"></span>
+        <span class="dot" onclick="currentslide(2)"></span>
+        <span class="dot" onclick="currentslide(3)"></span>
+        <span class="dot" onclick="currentslide(4)"></span>
+        <span class="dot" onclick="currentslide(5)"></span>
+        <span class="dot" onclick="currentslide(6)"></span>
+    </div>
+    <script src="carousel.js"></script>
 </body>
 </html>
