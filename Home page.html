@@ -1,38 +1,106 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta charset="utf-8" />
+    <!--sets the title of the webpage, easy to navigate as it the main home page-->
     <title>Home</title>
+    <!--links to CSS for styling and design of webpage   -->
     <link rel="stylesheet" href="StyleSheet1.css" />
+    <!--links to Java Script for functionality   -->
+    <script src="carousel.js"></script>
+    <script src="script.js"></script>
+
+
 </head>
 <body>
-    <div>
+    <!--The main body of the webpage where all content is dispalyed -->
 
-        <div class="header">
-            <a href="Home page.html" class="logo">
-                <img src="IMAGES/HeartwE LOGO.jpg" />
+    <div class="header">
+        <!--Contaier for the website header  -->
+        <a href="Home page.html" class="logo">
+            <img src="IMAGES/HeartwE LOGO.jpg" />
+            <!--displays the logo for the website and links it back to the homepage -->
 
-            </a>
-            <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="#Fundraising">Fundraising</a>
-                <a href="#Halls">Halls</a>
-                <a href="#contact us">Contact us</a>
-                <a href="#FAQ'S">FAQ'S</a>
-                <a href="#About Us">About Us</a>
+        </a>
+        <!--Contaier for the navigation link-->
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#Fundraising">Fundraising</a>
+            <a href="#Halls">Halls</a>
+            <a href="#contact us">Contact us</a>
+            <a href="#FAQ'S">FAQ'S</a>
+            <a href="#About Us">About Us</a>
 
-            </div>
         </div>
-
 
     </div>
 
+    <!-- Carousel Container -->
+    <div class="carousel-container">
+
+        <!-- Full-width images with number and caption -->
+        <div class="carousel-fade mySlides">
+            <div class="imagenumber">1 / 6</div>
+            <img src="images/childpoverty.jpg" style="width:100%">
+            <div class="text">Child Poverty</div>
+        </div>
+
+        <div class="carousel-fade mySlides">
+            <div class="imagenumber">2 / 6</div>
+            <img src="images/homeless.jpg" style="width:100%">
+            <div class="text">Homelessness</div>
+        </div>
+
+        <div class="carousel-fade mySlides">
+            <div class="imagenumber">3 / 6</div>
+            <img src="images/natural-disaster-support.jpg" style="width:100%">
+            <div class="text">Natural Disaster Aid</div>
+        </div>
+
+        <div class="carousel-fade mySlides">
+            <div class="imagenumber">4 / 6</div>
+            <img src="images/foodbank.png" style="width:100%">
+            <div class="text">Food Banks</div>
+        </div>
+
+        <div class="carousel-fade mySlides">
+            <div class="imagenumber">5 / 6</div>
+            <img src="images/disability-support.jpg" style="width:100%">
+            <div class="text">Disability Support</div>
+        </div>
+
+        <div class="carousel-fade mySlides">
+            <div class="imagenumber">6 / 6</div>
+            <img src="images/ptsd.jpg" style="width:100%">
+            <div class="text">PTSD for Traumatic Incidents</div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <!-- Dots/Indicators -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+
+
     <p>
+        <!--A heading for he about us section-->
         <h1 id="about-us">About Us</h1>
 
     </p>
 
+    <!-- Placeholder text simulating the content for the About Us section -->
     <lorem>
         Lorem ipsum odor amet, consectetuer adipiscing elit. Euismod montes nec sagittis, nisi eget risus taciti vitae cursus. Cras pellentesque efficitur blandit facilisi cursus aptent erat praesent et. Varius class nulla penatibus neque pharetra auctor purus inceptos a. Sagittis orci id tristique a inceptos. Vivamus ullamcorper tempus fermentum sagittis felis curae. Fames phasellus placerat habitant sed scelerisque.
         ......
@@ -42,18 +110,32 @@
 
     </lorem>
 
-    <div class="pink-box">
-    <div class="content-left">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.3044049857394!2d-2.239515337921522!3d53.480890614532846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1bf73100639%3A0x67a100e10acc5a25!2sPiccadilly%20Gardens%2C%20Manchester%20M60%201AY!5e0!3m2!1sen!2suk!4v1733687997371!5m2!1sen!2suk"
-                width="100%" height="100%" style="border:0;"></iframe>
+    <div class="grey-box">
+        <!--styled container-->
+        <div class="content-left">
+            <!--section for embedding google maps iframe-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.3044049857394!2d-2.239515337921522!3d53.480890614532846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1bf73100639%3A0x67a100e10acc5a25!2sPiccadilly%20Gardens%2C%20Manchester%20M60%201AY!5e0!3m2!1sen!2suk!4v1733687997371!5m2!1sen!2suk"
+                    width="100%" height="100%" style="border:0;"></iframe>
+            <!-- Embeds a Google Map showing a specific location -->
 
+        </div>
+
+        <div class="content-right">
+            <!--section foor contact details -->
+            <h1>Contact Us</h1>
+            <h3>Email:heartwe@charity.us</h3>
+            <h3>Phone:+07404558236</h3>
+            <h3>Address:Piccadilly, Manchester M1 1AF</h3>
+        </div>
     </div>
-    <div class="content-right">
-        <h1>Contact Us</h1>
-        <h3>Email:heartwe@charity.us</h3>
-        <h3>Phone:+07404558236</h3>
-        <h3>Address:Piccadilly, Manchester M1 1AF</h3>
-    </div>
-   </div>
+
+    <!-- footer section at the bottom of the page -->
+    <footer>
+        <p>© 2024 Heart Me Charity. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+        <!-- Displays copyright information and links to Privacy Policy and Contact Us pages -->
+    </footer>
+
 </body>
 </html>
+
+
